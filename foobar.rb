@@ -1,13 +1,10 @@
 class Foobar
-  def initialize(arr)
-  	@arr = arr
-  end
-  def self.baz
-  	@arr.each { |i| i.to_i }
-  	@arr.each { |i| i + 2 }
-  	@arr.select! { |i| i.even? }
-  	@arr.uniq
-  	@arr.reject { |i| i > 10 }
-  	@arr.inject(0) { |sum, i| sum + i }
+  def self.baz(arr)
+  	arr = arr.map { |i| i.to_i }
+  	arr = arr.map { |i| i + 2 }
+  	arr = arr.select! { |i| i.even? }
+  	arr = arr.uniq
+  	arr = arr.reject { |i| i > 10 }
+  	arr = arr.inject(0) { |sum, i| sum + i }
   end
 end

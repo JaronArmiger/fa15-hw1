@@ -7,7 +7,7 @@ def sort_array_plus_one(a)
       a.map { |i| i + 1 }end
 
 def combine_name(first_name, last_name)
-  puts "#{first_name} #{last_name}"
+    "#{first_name} #{last_name}"
 end
 
 def blockin_time(a)
